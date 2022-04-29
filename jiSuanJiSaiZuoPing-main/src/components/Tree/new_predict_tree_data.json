@@ -1,0 +1,232 @@
+{
+    "name": "score",
+    "link": "",
+    "children": [
+        {
+            "name": "library",
+            "link": "50-75%",
+            "children": [
+                {
+                    "name": "dorm",
+                    "link": "50-75%",
+                    "children": [
+                        {
+                            "name": "偏高",
+                            "link": "70-100%"
+                        },
+                        {
+                            "name": "偏高",
+                            "link": "40-70%"
+                        },
+                        {
+                            "name": "booking",
+                            "link": "0-40%",
+                            "children": [
+                                {
+                                    "name": "偏高",
+                                    "link": "30-60%"
+                                },
+                                {
+                                    "name": "高",
+                                    "link": "60-100%"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "consume",
+                    "link": "75-100%",
+                    "children": [
+                        {
+                            "name": "偏高",
+                            "link": "20-80%"
+                        },
+                        {
+                            "name": "高",
+                            "link": "80-100%"
+                        }
+                    ]
+                },
+                {
+                    "name": "consume",
+                    "link": "0-25%",
+                    "children": [
+                        {
+                            "name": "偏低",
+                            "link": "20-80%"
+                        },
+                        {
+                            "name": "偏低",
+                            "link": "0-20%"
+                        },
+                        {
+                            "name": "dorm",
+                            "link": "80-100%",
+                            "children": [
+                                {
+                                    "name": "偏低",
+                                    "link": "70-100%"
+                                },
+                                {
+                                    "name": "低",
+                                    "link": "0-40%"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "subsidy",
+                    "link": "25-50%",
+                    "children": [
+                        {
+                            "name": "偏低",
+                            "link": "无"
+                        },
+                        {
+                            "name": "偏高",
+                            "link": "有"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "booking",
+            "link": "75-100%",
+            "children": [
+                {
+                    "name": "dorm",
+                    "link": "30-60%",
+                    "children": [
+                        {
+                            "name": "偏高",
+                            "link": "40-70%"
+                        },
+                        {
+                            "name": "高",
+                            "link": "0-40%"
+                        }
+                    ]
+                },
+                {
+                    "name": "偏高",
+                    "link": "0-30%"
+                },
+                {
+                    "name": "高",
+                    "link": "60-100%"
+                }
+            ]
+        },
+        {
+            "name": "booking",
+            "link": "0-25%",
+            "children": [
+                {
+                    "name": "低",
+                    "link": "30-60%"
+                },
+                {
+                    "name": "低",
+                    "link": "0-30%"
+                },
+                {
+                    "name": "dorm",
+                    "link": "60-100%",
+                    "children": [
+                        {
+                            "name": "偏低",
+                            "link": "70-100%"
+                        },
+                        {
+                            "name": "低",
+                            "link": "40-70%"
+                        },
+                        {
+                            "name": "偏低",
+                            "link": "0-40%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "library",
+            "link": "25-50%",
+            "children": [
+                {
+                    "name": "booking",
+                    "link": "50-75%",
+                    "children": [
+                        {
+                            "name": "偏低",
+                            "link": "30-60%"
+                        },
+                        {
+                            "name": "consume",
+                            "link": "60-100%",
+                            "children": [
+                                {
+                                    "name": "低",
+                                    "link": "20-80%"
+                                },
+                                {
+                                    "name": "偏高",
+                                    "link": "80-100%"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "subsidy",
+                    "link": "75-100%",
+                    "children": [
+                        {
+                            "name": "consume",
+                            "link": "无",
+                            "children": [
+                                {
+                                    "name": "偏高",
+                                    "link": "20-80%"
+                                },
+                                {
+                                    "name": "偏低",
+                                    "link": "0-20%"
+                                },
+                                {
+                                    "name": "偏高",
+                                    "link": "80-100%"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "偏低",
+                            "link": "有"
+                        }
+                    ]
+                },
+                {
+                    "name": "低",
+                    "link": "0-25%"
+                },
+                {
+                    "name": "booking",
+                    "link": "25-50%",
+                    "children": [
+                        {
+                            "name": "偏低",
+                            "link": "30-60%"
+                        },
+                        {
+                            "name": "低",
+                            "link": "0-30%"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

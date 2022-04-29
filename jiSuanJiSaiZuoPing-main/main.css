@@ -1,0 +1,461 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+text {
+    user-select: none;
+}
+
+#root {
+    width: 100%;
+    height: 700px;
+    float: left;
+    margin: none;
+    background-color: rgb(255, 255, 255)
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid rgb(238, 142, 15);
+    border: none;
+    margin: 0 auto;
+}
+
+.Control {
+    float: left;
+    width: 30%;
+    height: 40%;
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: none;
+    border: none;
+}
+
+.Radar {
+    width: 30%;
+    height: 60%;
+    /* position: relative; */
+    float: left;
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: 0 auto;
+    border-right: none;
+}
+
+.Scatter {
+    width: 45%;
+    height: 50%;
+    float: right;
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: none;
+    border: none
+}
+
+.Person {
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: none;
+    border: none;
+    height: 40%;
+    width: 25%;
+    float: right;
+    background-position: -10px 5px;
+    /* background-image: url("../data/person.jpg"); */
+    opacity: 0.9;
+}
+
+.HetMap {
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: none;
+    border: none;
+    float: right;
+    width: 25%;
+    height: 10%;
+}
+
+/* .Line{
+    height: 50%;
+    width: 45%;
+    float: right;
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: 0 auto;
+    border:none
+} */
+.Pie {
+    height: 50%;
+    width: 25%;
+    float: right;
+    outline: 1px ridge rgb(64, 169, 230);
+    margin: 0 auto;
+    border: none
+}
+
+div {
+    /* float: left; */
+    margin: 0 auto;
+    border: none;
+    overflow: none !important;
+}
+
+li {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.Change {
+    height: 50%;
+    width: 45%;
+    float: right;
+    outline: 1px ridge rgb(64, 169, 230);
+    background: 'none';
+    margin: 0 auto;
+    border: none
+}
+
+
+
+.Control .Control_text {
+    float: left;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 20px;
+    /* top: ; */
+    font-size: 12px;
+}
+
+.Control span {
+    position: absolute;
+    float: left;
+    /* text-align: center; */
+    left: 10%;
+    top: 20px;
+}
+
+.Control span button {
+    position: initial;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.bar_svg {
+    border: none;
+    margin: 0 auto;
+    float: left;
+    /* outline:1px dotted ; */
+    height: 40%;
+    width: 100%;
+    position: relative;
+    top: 7%;
+    font-size: 12px;
+}
+
+.y_bar_text {
+    font-size: 9px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    fill: #506b86;
+}
+
+.x_bar_text {
+    font-size: 10px;
+    fill: #506b86;
+}
+
+table {
+    width: 100%;
+    height: 45.5%;
+    position: relative;
+    top: 7%;
+    text-align: center;
+    border-collapse: collapse;
+    /* border:1px solid rgb(214, 117, 27); */
+    border-top: 1px solid rgb(214, 117, 27);
+    /* border-bottom: 1px solid rgb(214, 117, 27); */
+    border-right: 1px solid rgb(64, 169, 230);
+    font-size: 12px;
+}
+
+td,
+tr {
+    outline: 1px solid rgb(201, 112, 112);
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+tr {
+    background-color: cornsilk;
+}
+
+.Person svg {
+    border: none;
+    margin: 0 auto;
+    /* outline:1px dotted; */
+    height: 96%;
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    /* top: 5%; */
+}
+
+#personHead {
+    width: 100%;
+    height: 4%;
+    border: none;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    /* outline: 1px ridge rgb(199, 167, 126);   */
+    /* outline: 1px ridge rgb(64, 169, 230);   */
+    /* background-color: rgb(209, 209, 206); */
+}
+
+.Scatter svg {
+    border: none;
+    margin: 0 auto;
+    /* outline:1px dotted; */
+    height: 94%;
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    /* top: 5%; */
+}
+
+.Scatter div {
+    width: 100%;
+    height: 6%;
+    border: none;
+    margin: 0 auto;
+    font-size: 10px;
+    /* outline: 1px ridge rgb(199, 167, 126);   */
+    /* outline: 1px ridge rgb(64, 169, 230);   */
+    background-color: rgb(209, 209, 206);
+}
+
+.Pie svg {
+    border: none;
+    margin: 0 auto;
+    /* outline:1px dotted; */
+    height: 94%;
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    /* top: 5%; */
+}
+
+.Pie div {
+    width: 100%;
+    height: 6%;
+    border: none;
+    margin: 0 auto;
+    /* outline: 1px ridge rgb(199, 167, 126);   */
+    /* outline: 1px ridge rgb(64, 169, 230);   */
+    background-color: rgb(209, 209, 206);
+}
+
+
+.het {
+    background-color: rgb(51, 117, 33);
+}
+
+.HetMap svg {
+    border: none;
+    margin: 0 auto;
+    /* outline:1px dotted; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+}
+
+.HetMap svg text {
+    font-size: 10px;
+}
+
+.HetMap svg rect {
+    /* border: none; */
+    margin: 0 auto;
+    /* outline: 1px solid rgb(227, 241, 218); */
+}
+
+.Radar svg {
+    border: none;
+    /* outline:1px dotted; */
+    height: 95%;
+    width: 100%;
+    position: relative;
+    /* top: 5%; */
+}
+
+.Radar div {
+    /* width: 100%; */
+    border: none;
+    margin: 0 auto;
+    /* outline: 1px ridge rgb(64, 169, 230); */
+    background-color: rgb(207, 207, 203);
+}
+
+.radarTooltip {
+    position: absolute;
+    width: 125px;
+    height: 80px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(228, 147, 56);
+    white-space: pre-line;
+    line-height: 150%;
+    font-size: 10px;
+    z-index: 100;
+}
+
+.radarTooltip.hidden {
+    display: none;
+}
+
+.radarTooltip p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 10px;
+    word-wrap: break-word;
+}
+
+.id_path {
+    z-index: 88;
+}
+
+
+
+/* .Line div{
+    width: 100%;
+    height: 6%;
+    border: none;
+    margin: 0 auto;
+    outline: 1px ridge rgb(64, 169, 230);  
+    background-color: rgb(209, 209, 206);
+} */
+.Line svg {
+    border: none;
+    margin: 0;
+    /* outline:1px dotted; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: 'rgb(216, 216, 216)';
+    font-size: 12px;
+}
+
+.line_labels_text {
+    /* font-size: 8px; */
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    fill: #74787c;
+}
+
+.lineTitleText {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    /* fill:#e5e7e5 */
+}
+
+.LL {
+    height: 90%;
+    width: 100%;
+    float: left;
+    /* outline: 1px ridge rgb(64, 169, 230); */
+    margin: 0 auto;
+    border: none;
+    background: 'rgb(216, 216, 216)'
+}
+
+.Line {
+    height: 100%;
+    width: 100%;
+    float: left;
+    /* outline: 1px ridge rgb(64, 169, 230); */
+    margin: 0 auto;
+    border: none;
+    background: 'rgb(216, 216, 216)'
+}
+
+.Lines {
+    height: 100%;
+    width: 100%;
+    float: left;
+    /* outline: 1px ridge rgb(64, 169, 230); */
+    margin: 0 auto;
+    border: none;
+    background: 'rgb(216, 216, 216)'
+}
+
+#select {
+    height: 9%;
+    width: 100%;
+    float: left;
+    background-color: 'rgb(216, 216, 216)'
+}
+
+#BTN1 {
+    float: left;
+    border-top: 1px solid rgb(215, 215, 215);
+    line-height: 20px;
+    margin-top: 3px;
+    border-left: 1px solid rgb(215, 215, 215);
+    margin-left: 10px;
+    border-right: 1px solid rgb(215, 215, 215);
+    border-radius: 6px 6px 0px 0px;
+    background: none;
+    cursor: pointer;
+    color: black;
+}
+
+#BTN2 {
+    float: left;
+    border-top: 1px solid rgb(215, 215, 215);
+    line-height: 20px;
+    margin-top: 3px;
+    border-left: 1px solid rgb(215, 215, 215);
+    margin-left: 10px;
+    border-right: 1px solid rgb(215, 215, 215);
+    border-radius: 6px 6px 0px 0px;
+    background: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+}
+
+#textTooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+
+    z-index: 100;
+    visibility: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+#textTooltipSvg {
+    width: 100%;
+    height: 100%;
+
+}
+
+#textTooltipSvg text {
+
+    font-size: 16px;
+    color: black;
+}
+
+#TextColor {
+    cx: 5%;
+    cy: 50%;
+    r: 3px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生画像</title>
+    
+    <!-- <script src="https://d3js.org/d3.v3.js"></script> -->
+    <script src="./d3.layout.cloud.js"></script>
+    <script src="./d3.min.js"></script>
+
+    <link href="./src/components/Tree/tree.css" rel="stylesheet" type="text/css" />
+    <link href="./src/components/Line/line.css" rel="stylesheet" type="text/css" />
+    
+    <link href="./main.css" rel="stylesheet" type="text/css" />
+<!-- <script src="node.js"></script> -->
+
+</head>
+
+
+<body>
+    <div id="root">
+
+
+        <div class="app-container">
+
+
+            <div class="Control">
+
+
+                <span class="Control_text">统计学生总人数:9130<br/>总学院数:19</span>
+
+                <span  >
+                <input placeholder="输入学生ID" id="id"></input>
+                <button onClick="getId();getId_pie();getId_Het();getId_radar();getId_line()" >查询</button>
+                </span>
+
+                <svg class="bar_svg" id="bar_svg">
+                    
+                    <text class="x_bar_text" x=0 y=102  >学院编号</text>
+                    <text class="y_bar_text" x=20 y=15  >统计的学生人数</text>
+                </svg>
+
+                <table>
+                    <thead>
+                        <tr><th>属性</th><th>全校平均</th><th id='collegeHead'>9号学院平均</th><th id="idHead">1号学生数据</th></tr>
+                    </thead>
+                        <tbody>
+                            
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">借书数</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">卡消费</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+                                
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">门禁总次数</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+                                
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">进出图书管次数</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+                                
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">分数排名</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+
+                                <tr > 
+                                    <td style="background-color:rgb(171, 153, 206)">助学金</td>
+                                    <td style="background-color:rgb(160, 218, 170)" name="college"></td>
+                                    <td style="background-color:rgb(143, 204, 223)" name="avg_college"></td>
+                                    <td style="background-color:#CC9999" name="avg_student"></td>
+                                </tr>
+                            
+                        
+                        </tbody>
+                    </table>
+            </div>
+                
+            <div class="Scatter">
+                <div>挂科风险预测树</div>
+                <svg id="ScatterSvg"></svg></div>
+            <div class="Person">
+                <div id="textTooltip"><svg id="textTooltipSvg"><circle id="TextColor"></circle></svg></div>
+                <div id="personHead"></div>
+                <svg id="PersonSvg"></svg></div>
+            <div class="HetMap">
+                
+                    <svg class='HetMapSvg'>
+                        <text x="1%" y="45.2%" >进出图书馆规律</text>
+                        <rect id='星期一' x="20%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期二' x="30%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期三' x="40%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期四' x="50%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期五' x="60%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期六' x="70%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+                        <rect id='星期日' x="80%" y="25%" fill="rgb(188,202,177)" width='10%'height='30%'></rect>
+
+                        <text key='星期一' x="20%" y="75%" >星期一</text>
+                        <text key='星期二' x="30%" y="75%" >星期二</text>
+                        <text key='星期三' x="40%" y="75%" >星期三</text>
+                        <text key='星期四' x="50%" y="75%" >星期四</text>
+                        <text key='星期五' x="60%" y="75%" >星期五</text>
+                        <text key='星期六' x="70%" y="75%" >星期六</text>
+                        <text key='星期天' x="80%" y="75%" >星期天</text>
+
+                    </svg>
+                
+            </div>
+            <div class="Radar">
+                <div>多属性对比分析</div>
+                <div class="radarTooltip hidden"><text class="name"></text></div>
+                <svg id="radar" >
+                </svg>
+            </div>
+            <div class="Change">
+                <div id="select" >
+                    <div id="BTN1" onClick="personal()">个人折线图</div>
+
+                    <div id="BTN2" onClick="collegenal()">学院平行坐标系图</div>
+                
+                </div>
+                    
+                <svg id="ChangeSvg"></svg>
+                    
+                
+                
+            </div>
+            <div class="Pie">
+                
+                <div>POS卡消费情况</div>
+                <svg class="pie"></svg>
+            </div>
+        </div>
+        </div>
+            
+        
+    </div>
+    
+</body>
+<script src="./src/components/control/index.js"></script>
+<script src="./src/components/book/book.js"></script>
+<script src="./src/components/Tree/tree.js"></script>
+<script src="./src/components/Line/line.js"></script>
+<script src="./src/components/pie/index.js"></script>
+<script src="./src/components/HetMap/index.js"></script>
+<script src="./src/components/radar/radar.js"></script>
+</html>
